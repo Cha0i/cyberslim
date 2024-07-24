@@ -6,7 +6,7 @@ Code lives on four places through git
 - local `code on your machine`
 - staging area `code ready to be added to commit`
 - commit `collection of changes made to repo`
-- repo `final code on github`
+- repo `short for repository, the final code on github`
 
 Connecting to repo
 ```

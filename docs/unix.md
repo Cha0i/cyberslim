@@ -1,5 +1,5 @@
 # Unix commands
-
+> Note: Commands apply to my distro: `Kubuntu 24.0 LTS` codename: `noble`
 ## Basic commands
 
 ### Update everything
@@ -20,3 +20,4 @@ Run
 source ~/.bashrc
 ```
 To apply the changes.
+

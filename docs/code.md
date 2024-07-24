@@ -1,3 +1,5 @@
+# Code documentation
+
 ## Markdown documentation
 
 ### Basic syntax

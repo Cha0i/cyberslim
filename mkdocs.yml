@@ -48,3 +48,8 @@ nav:
   - App Docs: index.md
   - Code Docs: code.md
   - Unix: unix.md
+
+#copyright: Cyberslim
+
+extra:
+  generator: false
