@@ -17,8 +17,8 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
+      primary: red
+      accent: red 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
@@ -42,3 +42,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+
+nav:
+  - Home: index.md
