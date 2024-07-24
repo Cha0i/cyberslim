@@ -2,7 +2,7 @@ site_name: Cyberslim
 theme:
   name: material
   features:
-    #- navigation.tabs
+    - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
@@ -43,5 +43,7 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
 
-#nav:
-#  - Sitemap: index.md
+nav:
+  - About: about.md
+  - Docs: index.md
+  - Unix: unix.md

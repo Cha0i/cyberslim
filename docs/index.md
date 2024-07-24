@@ -1,10 +1,4 @@
-# Home
-
-## About
-
-These pages serve as personal documentation for all sorts of things. If it's more then 3 characters and I need to remember it, it's probably on here. It's explicity for personal use but if you can make use of anything you find here, feel free of course but use at your own risk, see disclaimer below. 
-
-> The software is provided "as is," without any warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, zombie apocalypses, alien invasions, spontaneous combustion, reality distortions, gravitational anomalies, acts of piracy (both digital and maritime), quantum entanglements gone awry, black hole creations, sudden outbreaks of disco fever, magical mishaps, bad hair days, decapitations, unexpected moustache growth, time travel paradoxes, existential crises, unintentional unicorn summoning,, loss of limbs, themonuclear warfare or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+# Docs
 
 ## Markdown documentation
 
