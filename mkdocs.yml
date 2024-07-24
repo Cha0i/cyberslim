@@ -45,5 +45,6 @@ markdown_extensions:
 
 nav:
   - About: about.md
-  - Docs: index.md
+  - App Docs: index.md
+  - Code Docs: code.md
   - Unix: unix.md
