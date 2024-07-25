@@ -12,13 +12,15 @@
         <link rel="prev" href="../code/">
       
       
+        <link rel="next" href="../tools/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
     
     
       
-        <title>Unix - Cyberslim</title>
+        <title>Bash - Cyberslim</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unix-commands" class="md-skip">
+        <a href="#bash-cheat-sheet" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unix
+              Bash
             
           </span>
         </div>
@@ -223,7 +225,7 @@
   
     
   
-  App Docs
+  Main Docs
 
       </a>
     </li>
@@ -259,7 +261,41 @@
   
     
   
-  Unix
+  Bash
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tools/" class="md-tabs__link">
+        
+  
+    
+  
+  Tools
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../extras/" class="md-tabs__link">
+        
+  
+    
+  
+  Extra's
 
       </a>
     </li>
@@ -332,7 +368,7 @@
         
   
   <span class="md-ellipsis">
-    App Docs
+    Main Docs
   </span>
   
 
@@ -381,7 +417,7 @@
           
   
   <span class="md-ellipsis">
-    Unix
+    Bash
   </span>
   
 
@@ -392,7 +428,7 @@
         
   
   <span class="md-ellipsis">
-    Unix
+    Bash
   </span>
   
 
@@ -454,6 +490,46 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extras/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra's
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -469,10 +545,11 @@
                   
 
 
-<h1 id="unix-commands">Unix commands</h1>
-<blockquote>
-<p>Note: Commands apply to my distro: <code>Kubuntu 24.0 LTS</code> codename: <code>noble</code></p>
-</blockquote>
+<h1 id="bash-cheat-sheet">Bash cheat sheet</h1>
+<div class="admonition note annotate">
+<p class="admonition-title">Note:</p>
+<p>Only applies to Ubuntu/Debian based distro's... and maybe others, who knows. </p>
+</div>
 <h2 id="basic-commands">Basic commands</h2>
 <h3 id="update-everything">Update everything</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt update -y &amp;&amp; sudo apt autoremove -y &amp;&amp; sudo apt autoclean -y &amp;&amp; sudo apt update -y &amp;&amp; sudo apt upgrade -y &amp;&amp; sudo snap refresh
@@ -485,7 +562,7 @@
 <p>Run
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>source ~/.bashrc
 </code></pre></div>
-To apply the changes.</p>
+And <mark>restart the shell</mark> to apply changes.</p>
 
 
 

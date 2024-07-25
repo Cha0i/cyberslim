@@ -1,4 +1,4 @@
-# App documentation
+# Main documentation
 
 ## Git
 Code lives on four places through git
@@ -37,7 +37,7 @@ git push -u origin main
 
 ### Basic commands
 
-[Complete docker documentation](https://docs.docker.com/guides/)
+[Complete Docker documentation](https://docs.docker.com/guides/)
 
 List running containers
 ```
@@ -90,3 +90,5 @@ Some of the most common instructions in a `Dockerfile` include:
 - `EXPOSE <port-number>` - this instruction sets configuration on the image that indicates a port the image would like to expose.
 - `USER <user-or-uid>` - this instruction sets the default user for all subsequent instructions.
 - `CMD ["<command>", "<arg1>"]` - this instruction sets the default command a container using this image will run.
+
+

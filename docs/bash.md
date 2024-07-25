@@ -1,5 +1,10 @@
-# Unix commands
-> Note: Commands apply to my distro: `Kubuntu 24.0 LTS` codename: `noble`
+# Bash cheat sheet
+!!! note annotate "Note:"
+
+    Only applies to Ubuntu/Debian based distro's... and maybe others, who knows. 
+    
+
+
 ## Basic commands
 
 ### Update everything
@@ -19,5 +24,5 @@ Run
 ```
 source ~/.bashrc
 ```
-To apply the changes.
+And ==restart the shell== to apply changes.
 

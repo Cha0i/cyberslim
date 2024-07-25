@@ -45,9 +45,11 @@ markdown_extensions:
 
 nav:
   - About: about.md
-  - App Docs: index.md
+  - Main Docs: index.md
   - Code Docs: code.md
-  - Unix: unix.md
+  - Bash: bash.md
+  - Tools: tools.md
+  - Extra's: extras.md
 
 #copyright: Cyberslim
 
