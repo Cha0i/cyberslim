@@ -92,3 +92,14 @@ Some of the most common instructions in a `Dockerfile` include:
 - `CMD ["<command>", "<arg1>"]` - this instruction sets the default command a container using this image will run.
 
 
+## Python
+
+### Virtual environments
+
+> ```python -m venv <directory>```
+
+Creates a venv in the specified directory and copies pip into it as well. If you’re unsure what to call the directory: venv is a commonly seen option; it doesn’t leave anyone guessing what it is. So the command, in that case, would become:
+
+> ```source bin/activate```
+
+We activate our virtual environment with the source command inside the bin directory of the virtual env.
