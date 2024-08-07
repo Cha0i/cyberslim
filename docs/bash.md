@@ -26,3 +26,8 @@ source ~/.bashrc
 ```
 And ==restart the shell== to apply changes.
 
+## Live mouse location
+
+> ``` watch -t -n 0.0001 xdotool getmouselocation ```
+
+Get a live mouse location.

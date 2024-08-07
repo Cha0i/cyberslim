@@ -1,4 +1,4 @@
-# Main documentation
+# Main
 
 ## Git
 Code lives on four places through git
@@ -103,3 +103,131 @@ Creates a venv in the specified directory and copies pip into it as well. If you
 > ```source bin/activate```
 
 We activate our virtual environment with the source command inside the bin directory of the virtual env.
+
+
+## PostgreSQL
+
+### Switch to the PostgreSQL User
+PostgreSQL creates a default user named `postgres`. Switch to this user to perform administrative tasks:
+```bash
+sudo -i -u postgres
+```
+
+### Access the PostgreSQL Prompt
+Access the PostgreSQL interactive terminal (`psql`):
+```bash
+psql
+```
+
+### Set a Password for the `postgres` User
+Set a password for the `postgres` user for improved security:
+```sql
+\password postgres
+```
+Enter your desired password when prompted. Then, exit the `psql` prompt:
+```sql
+\q
+```
+
+### Create a New Database
+Create a new database for testing purposes:
+```bash
+createdb testdb
+```
+
+### Create a New User
+Create a new PostgreSQL user and grant all privileges on the test database:
+```bash
+createuser testuser
+psql
+```
+
+Within the `psql` prompt, execute:
+```sql
+ALTER USER testuser WITH PASSWORD 'yourpassword';
+GRANT ALL PRIVILEGES ON DATABASE testdb TO testuser;
+\q
+```
+
+### Configure Remote Access (Optional)
+If you need to access PostgreSQL remotely, edit the configuration files.
+
+Edit `postgresql.conf` to listen on all addresses:
+```bash
+sudo nano /etc/postgresql/12/main/postgresql.conf
+```
+Uncomment and set:
+```plaintext
+listen_addresses = '*'
+```
+
+Edit `pg_hba.conf` to allow remote connections:
+```bash
+sudo nano /etc/postgresql/12/main/pg_hba.conf
+```
+Add the following line at the end:
+```plaintext
+host    all             all             0.0.0.0/0               md5
+```
+
+Restart PostgreSQL to apply the changes:
+```bash
+sudo systemctl restart postgresql
+```
+
+### Test the Connection
+You can test the connection to your new PostgreSQL setup using a PostgreSQL client:
+```bash
+psql -h localhost -U testuser -d testdb
+```
+
+Enter the password for `testuser` when prompted.
+
+Your PostgreSQL setup on Ubuntu should now be ready for testing. You can create tables, insert data, and perform other database operations as needed.
+```
+
+## Database Tables
+
+**Structure**:
+- **Rows**: Each row in a table represents a single record or entry.
+- **Columns**: Each column represents a specific attribute or field of the data category. Each column has a specific data type (e.g., integer, varchar, date).
+
+**Schema**:
+- The schema of a table defines its structure, including the column names, data types, and constraints (e.g., primary keys, foreign keys, unique constraints).
+
+### Example
+
+Consider a simple database for a library system. It might contain tables like:
+
+**Books**:
+- Columns: `BookID`, `Title`, `Author`, `PublishedYear`, `Genre`
+- Each row represents a specific book.
+
+**Members**:
+- Columns: `MemberID`, `Name`, `JoinDate`, `Email`
+- Each row represents a library member.
+
+**Loans**:
+- Columns: `LoanID`, `BookID`, `MemberID`, `LoanDate`, `ReturnDate`
+- Each row represents a loan transaction, linking members to the books they borrowed.
+
+### Relationships
+
+Tables can be related to each other using keys:
+- **Primary Key**: A unique identifier for each record in a table (e.g., `BookID` in the `Books` table).
+- **Foreign Key**: A field in one table that uniquely identifies a row of another table (e.g., `MemberID` in the `Loans` table, linking to `MemberID` in the `Members` table).
+
+### Querying Tables
+
+You can query tables to retrieve, insert, update, or delete data using SQL (Structured Query Language). For example:
+- To get all books by a specific author:
+  ```sql
+  SELECT * FROM Books WHERE Author = 'Author Name';
+
+    To add a new member:
+
+    sql
+
+    INSERT INTO Members (Name, JoinDate, Email) VALUES ('John Doe', '2024-08-07', 'john@example.com');
+
+By organizing data into tables, a database allows for efficient data management, retrieval, and manipulation.

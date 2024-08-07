@@ -45,7 +45,7 @@ markdown_extensions:
 
 nav:
   - About: about.md
-  - Main Docs: index.md
+  - Main: index.md
   - Code Docs: code.md
   - Bash: bash.md
   - Tools: tools.md

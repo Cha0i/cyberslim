@@ -466,6 +466,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual environments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -637,6 +661,16 @@
 <li><code>USER &lt;user-or-uid&gt;</code> - this instruction sets the default user for all subsequent instructions.</li>
 <li><code>CMD ["&lt;command&gt;", "&lt;arg1&gt;"]</code> - this instruction sets the default command a container using this image will run.</li>
 </ul>
+<h2 id="python">Python</h2>
+<h3 id="virtual-environments">Virtual environments</h3>
+<blockquote>
+<p><code>python -m venv &lt;directory&gt;</code></p>
+</blockquote>
+<p>Creates a venv in the specified directory and copies pip into it as well. If you’re unsure what to call the directory: venv is a commonly seen option; it doesn’t leave anyone guessing what it is. So the command, in that case, would become:</p>
+<blockquote>
+<p><code>source bin/activate</code></p>
+</blockquote>
+<p>We activate our virtual environment with the source command inside the bin directory of the virtual env.</p>
 
 
 
