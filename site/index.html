@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#main-documentation" class="md-skip">
+        <a href="#main" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Main Docs
+              Main
             
           </span>
         </div>
@@ -227,7 +227,7 @@
   
     
   
-  Main Docs
+  Main
 
       </a>
     </li>
@@ -377,7 +377,7 @@
           
   
   <span class="md-ellipsis">
-    Main Docs
+    Main
   </span>
   
 
@@ -388,7 +388,7 @@
         
   
   <span class="md-ellipsis">
-    Main Docs
+    Main
   </span>
   
 
@@ -480,6 +480,126 @@
   <a href="#virtual-environments" class="md-nav__link">
     <span class="md-ellipsis">
       Virtual environments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PostgreSQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-the-postgresql-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch to the PostgreSQL User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-the-postgresql-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access the PostgreSQL Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-a-password-for-the-postgres-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set a Password for the postgres User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a New Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a New User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-remote-access-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Remote Access (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Tables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationships
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querying-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Querying Tables
     </span>
   </a>
   
@@ -593,7 +713,7 @@
                   
 
 
-<h1 id="main-documentation">Main documentation</h1>
+<h1 id="main">Main</h1>
 <h2 id="git">Git</h2>
 <p>Code lives on four places through git</p>
 <ul>
@@ -671,6 +791,93 @@
 <p><code>source bin/activate</code></p>
 </blockquote>
 <p>We activate our virtual environment with the source command inside the bin directory of the virtual env.</p>
+<h2 id="postgresql">PostgreSQL</h2>
+<h3 id="switch-to-the-postgresql-user">Switch to the PostgreSQL User</h3>
+<p>PostgreSQL creates a default user named <code>postgres</code>. Switch to this user to perform administrative tasks:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>-i<span class="w"> </span>-u<span class="w"> </span>postgres
+</code></pre></div></p>
+<h3 id="access-the-postgresql-prompt">Access the PostgreSQL Prompt</h3>
+<p>Access the PostgreSQL interactive terminal (<code>psql</code>):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>psql
+</code></pre></div></p>
+<h3 id="set-a-password-for-the-postgres-user">Set a Password for the <code>postgres</code> User</h3>
+<p>Set a password for the <code>postgres</code> user for improved security:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="err">\</span><span class="n">password</span><span class="w"> </span><span class="n">postgres</span>
+</code></pre></div>
+Enter your desired password when prompted. Then, exit the <code>psql</code> prompt:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="err">\</span><span class="n">q</span>
+</code></pre></div></p>
+<h3 id="create-a-new-database">Create a New Database</h3>
+<p>Create a new database for testing purposes:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>createdb<span class="w"> </span>testdb
+</code></pre></div></p>
+<h3 id="create-a-new-user">Create a New User</h3>
+<p>Create a new PostgreSQL user and grant all privileges on the test database:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>createuser<span class="w"> </span>testuser
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>psql
+</code></pre></div></p>
+<p>Within the <code>psql</code> prompt, execute:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">testuser</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;yourpassword&#39;</span><span class="p">;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">testdb</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">testuser</span><span class="p">;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="err">\</span><span class="n">q</span>
+</code></pre></div></p>
+<h3 id="configure-remote-access-optional">Configure Remote Access (Optional)</h3>
+<p>If you need to access PostgreSQL remotely, edit the configuration files.</p>
+<p>Edit <code>postgresql.conf</code> to listen on all addresses:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/postgresql/12/main/postgresql.conf
+</code></pre></div>
+Uncomment and set:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>listen_addresses = &#39;*&#39;
+</code></pre></div></p>
+<p>Edit <code>pg_hba.conf</code> to allow remote connections:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/postgresql/12/main/pg_hba.conf
+</code></pre></div>
+Add the following line at the end:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>host    all             all             0.0.0.0/0               md5
+</code></pre></div></p>
+<p>Restart PostgreSQL to apply the changes:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>postgresql
+</code></pre></div></p>
+<h3 id="test-the-connection">Test the Connection</h3>
+<p>You can test the connection to your new PostgreSQL setup using a PostgreSQL client:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-U<span class="w"> </span>testuser<span class="w"> </span>-d<span class="w"> </span>testdb
+</code></pre></div></p>
+<p>Enter the password for <code>testuser</code> when prompted.</p>
+<p>Your PostgreSQL setup on Ubuntu should now be ready for testing. You can create tables, insert data, and perform other database operations as needed.
+```</p>
+<h2 id="database-tables">Database Tables</h2>
+<p><strong>Structure</strong>:
+- <strong>Rows</strong>: Each row in a table represents a single record or entry.
+- <strong>Columns</strong>: Each column represents a specific attribute or field of the data category. Each column has a specific data type (e.g., integer, varchar, date).</p>
+<p><strong>Schema</strong>:
+- The schema of a table defines its structure, including the column names, data types, and constraints (e.g., primary keys, foreign keys, unique constraints).</p>
+<h3 id="example">Example</h3>
+<p>Consider a simple database for a library system. It might contain tables like:</p>
+<p><strong>Books</strong>:
+- Columns: <code>BookID</code>, <code>Title</code>, <code>Author</code>, <code>PublishedYear</code>, <code>Genre</code>
+- Each row represents a specific book.</p>
+<p><strong>Members</strong>:
+- Columns: <code>MemberID</code>, <code>Name</code>, <code>JoinDate</code>, <code>Email</code>
+- Each row represents a library member.</p>
+<p><strong>Loans</strong>:
+- Columns: <code>LoanID</code>, <code>BookID</code>, <code>MemberID</code>, <code>LoanDate</code>, <code>ReturnDate</code>
+- Each row represents a loan transaction, linking members to the books they borrowed.</p>
+<h3 id="relationships">Relationships</h3>
+<p>Tables can be related to each other using keys:
+- <strong>Primary Key</strong>: A unique identifier for each record in a table (e.g., <code>BookID</code> in the <code>Books</code> table).
+- <strong>Foreign Key</strong>: A field in one table that uniquely identifies a row of another table (e.g., <code>MemberID</code> in the <code>Loans</code> table, linking to <code>MemberID</code> in the <code>Members</code> table).</p>
+<h3 id="querying-tables">Querying Tables</h3>
+<p>You can query tables to retrieve, insert, update, or delete data using SQL (Structured Query Language). For example:
+- To get all books by a specific author:
+  ```sql
+  SELECT * FROM Books WHERE Author = 'Author Name';</p>
+<div class="highlight"><pre><span></span><code>To add a new member:
+
+sql
+
+INSERT INTO Members (Name, JoinDate, Email) VALUES (&#39;John Doe&#39;, &#39;2024-08-07&#39;, &#39;john@example.com&#39;);
+</code></pre></div>
+<p>By organizing data into tables, a database allows for efficient data management, retrieval, and manipulation.</p>
 
 
 
