@@ -12,19 +12,19 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
-  palette: dark
-    # - scheme: dark
-    #   toggle:
-    #     icon: material/toggle-switch-off-outline 
-    #     name: Switch to dark mode
-    #   primary: red
-    #   accent: red 
-    # - scheme: slate 
-    #   toggle: 
-    #     icon: material/toggle-switch
-        # name: Switch to light mode    
-      # primary: red
-      # accent: red
+  palette:
+    - scheme: dark
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: red
+      accent: red 
+    - scheme: slate 
+      toggle: 
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: red
+      accent: red
 
 plugins:
   - search
