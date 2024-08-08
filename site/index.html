@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="dark" data-md-color-primary="red" data-md-color-accent="red">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -119,21 +119,25 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="dark" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      </label>
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
     
   
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-      </label>
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_3">
     
   
 </form>
@@ -415,6 +419,66 @@
       Git
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting to repo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-changes-staged-for-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking changes staged for commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-changes-to-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding changes to commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-a-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making a commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushing-commit-to-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushing commit to repo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pulling-repo-or-sync-to-latest-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulling repo or sync to latest changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -715,6 +779,7 @@
 
 <h1 id="main">Main</h1>
 <h2 id="git">Git</h2>
+<p><a href="https://git-scm.com/docs/git">Complete Git documentation</a></p>
 <p>Code lives on four places through git</p>
 <ul>
 <li>local <code>code on your machine</code></li>
@@ -722,52 +787,63 @@
 <li>commit <code>collection of changes made to repo</code></li>
 <li>repo <code>short for repository, the final code on github</code></li>
 </ul>
-<p>Connecting to repo
+<h3 id="connecting-to-repo">Connecting to repo</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git remote add origin &lt;link&gt;
-</code></pre></div></p>
-<p>Checking changes staged for commit
+</code></pre></div>
+<h3 id="checking-changes-staged-for-commit">Checking changes staged for commit</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git status
-</code></pre></div></p>
-<p>Adding changes to commit <code>adds all changed files to commit, you can also do file.sth instead of .</code>
+</code></pre></div>
+<h3 id="adding-changes-to-commit">Adding changes to commit</h3>
+<p>adds all changed files to commit, you can also do file.sth instead of .
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git add .
 </code></pre></div></p>
-<p>Making a commit
+<h3 id="making-a-commit">Making a commit</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git commit -m &quot;What changed?&quot;
-</code></pre></div></p>
-<p>Pushing commit to repo <code>pushes to main branch</code>
+</code></pre></div>
+<h3 id="pushing-commit-to-repo">Pushing commit to repo</h3>
+<p>pushes to main branch
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git push -u origin main
 </code></pre></div></p>
+<h3 id="pulling-repo-or-sync-to-latest-changes">Pulling repo or sync to latest changes</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git clone https://github.com/Cha0i/cyberslim.git /path/
+</code></pre></div>
+<div class="admonition note annotate">
+<p class="admonition-title">Note:</p>
+<p>Github CLI is suppose to be faster
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>gh repo clone Cha0i/cyberslim
+</code></pre></div></p>
+</div>
 <h2 id="docker">Docker</h2>
 <h3 id="basic-commands">Basic commands</h3>
 <p><a href="https://docs.docker.com/guides/">Complete Docker documentation</a></p>
 <p>List running containers
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo docker ps
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo docker ps
 </code></pre></div></p>
 <p>List images
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo docker images
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo docker images
 </code></pre></div></p>
 <p>Run container from images the <code>-d</code> append is to run it detached so it returns the terminal
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo docker run -d &lt;image-name&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo docker run -d &lt;image-name&gt;
 </code></pre></div></p>
 <h3 id="writing-a-dockerfile">Writing a dockerfile</h3>
 <p>A Dockerfile is a text-based document that's used to create a container image. It provides instructions to the image builder on the commands to run, files to copy, startup command, and more.</p>
 <p>As an example, the following Dockerfile would produce a ready-to-run Python application:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.12</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/usr/local/app</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c"># Install the application dependencies</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>./
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c"># Copy in the source code</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">COPY</span><span class="w"> </span>src<span class="w"> </span>./src
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">5000</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c"># Setup an app user so the container doesn&#39;t run as the root user</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="k">RUN</span><span class="w"> </span>useradd<span class="w"> </span>app
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">USER</span><span class="w"> </span><span class="s">app</span>
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>
-<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;8080&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.12</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/usr/local/app</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c"># Install the application dependencies</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>./
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="c"># Copy in the source code</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="k">COPY</span><span class="w"> </span>src<span class="w"> </span>./src
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">5000</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="c"># Setup an app user so the container doesn&#39;t run as the root user</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="k">RUN</span><span class="w"> </span>useradd<span class="w"> </span>app
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="k">USER</span><span class="w"> </span><span class="s">app</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;8080&quot;</span><span class="p">]</span>
 </code></pre></div>
 <h4 id="common-instructions">Common instructions</h4>
 <p>Some of the most common instructions in a <code>Dockerfile</code> include:</p>
@@ -794,53 +870,53 @@
 <h2 id="postgresql">PostgreSQL</h2>
 <h3 id="switch-to-the-postgresql-user">Switch to the PostgreSQL User</h3>
 <p>PostgreSQL creates a default user named <code>postgres</code>. Switch to this user to perform administrative tasks:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>-i<span class="w"> </span>-u<span class="w"> </span>postgres
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>-i<span class="w"> </span>-u<span class="w"> </span>postgres
 </code></pre></div></p>
 <h3 id="access-the-postgresql-prompt">Access the PostgreSQL Prompt</h3>
 <p>Access the PostgreSQL interactive terminal (<code>psql</code>):
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>psql
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>psql
 </code></pre></div></p>
 <h3 id="set-a-password-for-the-postgres-user">Set a Password for the <code>postgres</code> User</h3>
 <p>Set a password for the <code>postgres</code> user for improved security:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="err">\</span><span class="n">password</span><span class="w"> </span><span class="n">postgres</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="err">\</span><span class="n">password</span><span class="w"> </span><span class="n">postgres</span>
 </code></pre></div>
 Enter your desired password when prompted. Then, exit the <code>psql</code> prompt:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="err">\</span><span class="n">q</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">\</span><span class="n">q</span>
 </code></pre></div></p>
 <h3 id="create-a-new-database">Create a New Database</h3>
 <p>Create a new database for testing purposes:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>createdb<span class="w"> </span>testdb
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>createdb<span class="w"> </span>testdb
 </code></pre></div></p>
 <h3 id="create-a-new-user">Create a New User</h3>
 <p>Create a new PostgreSQL user and grant all privileges on the test database:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>createuser<span class="w"> </span>testuser
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>psql
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>createuser<span class="w"> </span>testuser
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>psql
 </code></pre></div></p>
 <p>Within the <code>psql</code> prompt, execute:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">testuser</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;yourpassword&#39;</span><span class="p">;</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">testdb</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">testuser</span><span class="p">;</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="err">\</span><span class="n">q</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">testuser</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;yourpassword&#39;</span><span class="p">;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">testdb</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">testuser</span><span class="p">;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="err">\</span><span class="n">q</span>
 </code></pre></div></p>
 <h3 id="configure-remote-access-optional">Configure Remote Access (Optional)</h3>
 <p>If you need to access PostgreSQL remotely, edit the configuration files.</p>
 <p>Edit <code>postgresql.conf</code> to listen on all addresses:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/postgresql/12/main/postgresql.conf
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/postgresql/12/main/postgresql.conf
 </code></pre></div>
 Uncomment and set:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>listen_addresses = &#39;*&#39;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>listen_addresses = &#39;*&#39;
 </code></pre></div></p>
 <p>Edit <code>pg_hba.conf</code> to allow remote connections:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/postgresql/12/main/pg_hba.conf
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/postgresql/12/main/pg_hba.conf
 </code></pre></div>
 Add the following line at the end:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>host    all             all             0.0.0.0/0               md5
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>host    all             all             0.0.0.0/0               md5
 </code></pre></div></p>
 <p>Restart PostgreSQL to apply the changes:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>postgresql
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>postgresql
 </code></pre></div></p>
 <h3 id="test-the-connection">Test the Connection</h3>
 <p>You can test the connection to your new PostgreSQL setup using a PostgreSQL client:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-U<span class="w"> </span>testuser<span class="w"> </span>-d<span class="w"> </span>testdb
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-U<span class="w"> </span>testuser<span class="w"> </span>-d<span class="w"> </span>testdb
 </code></pre></div></p>
 <p>Enter the password for <code>testuser</code> when prompted.</p>
 <p>Your PostgreSQL setup on Ubuntu should now be ready for testing. You can create tables, insert data, and perform other database operations as needed.
