@@ -1,6 +1,8 @@
 # Main
 
 ## Git
+[Complete Git documentation](https://git-scm.com/docs/git)
+
 Code lives on four places through git
 
 - local `code on your machine`
@@ -8,30 +10,46 @@ Code lives on four places through git
 - commit `collection of changes made to repo`
 - repo `short for repository, the final code on github`
 
-Connecting to repo
+### Connecting to repo
 ```
 git remote add origin <link>
 ```
 
-Checking changes staged for commit
+### Checking changes staged for commit
 ```
 git status
 ```
 
-Adding changes to commit `adds all changed files to commit, you can also do file.sth instead of .`
+### Adding changes to commit 
+
+adds all changed files to commit, you can also do file.sth instead of .
 ```
 git add .
 ```
 
-Making a commit
+### Making a commit
 ```
 git commit -m "What changed?"
 ```
 
-Pushing commit to repo `pushes to main branch`
+### Pushing commit to repo 
+pushes to main branch
 ```
 git push -u origin main
 ```
+
+### Pulling repo or sync to latest changes
+```
+git clone https://github.com/Cha0i/cyberslim.git /path/
+```
+
+!!! note annotate "Note:"
+
+    Github CLI is suppose to be faster
+    ``` 
+    gh repo clone Cha0i/cyberslim
+    ```
+
 
 ## Docker
 
